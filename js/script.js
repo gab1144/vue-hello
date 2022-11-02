@@ -11,6 +11,7 @@ createApp({
       isImgShown: true,
       isTextShown: false,
       buttonToggleTextImg: "Nascondi l'immagine e mostra il testo",
+      clicked: true
     }
   },
   methods:{
@@ -22,6 +23,13 @@ createApp({
     },
     toggleTextImg(){
       this.isTextShown = !this.isTextShown;
+      if(this.clicked){
+        this.buttonToggleTextImg = "Nascondi il testo e mostra l'immagine";
+        this.clicked = !this.clicked;
+      } else {
+        this.buttonToggleTextImg = "Nascondi l'immagine e mostra il testo";
+        this.clicked = !this.clicked;
+      }
     }
   }
 }).mount('#app')
