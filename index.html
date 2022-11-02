@@ -18,6 +18,12 @@
   <div id="app">
     <h1 :class="myClass">{{message}}</h1>
     <button @click="testoRosso()">Cambia colore del messaggio</button>
+
+    <br>
+    <input type="text" v-model="imgName">
+    <br>
+    <img :src="path + imgName" alt="">
+
   </div>
 
   <script src="js/script.js"></script>
