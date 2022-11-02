@@ -16,6 +16,7 @@
 <body>
   
   <div id="app">
+    <input type="text" v-model="message">
     <h1 :class="myClass">{{message}}</h1>
     <button @click="testoRosso()">Cambia colore del messaggio</button>
     <button @click="toggleTextImg()">{{buttonToggleTextImg}}</button><br>
